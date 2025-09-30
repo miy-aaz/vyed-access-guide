@@ -1,0 +1,146 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Approver access guide
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for this page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">
+        View your education data (VYED): appover access guide
+      </h1>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+      <aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" role="complementary">
+        <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+          <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+            Contents
+          </h2>
+          <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="#">
+                Overview
+              </a>
+            </li>
+            <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="">
+              Check if you already have access to VYED
+            </li>
+            </a>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#">
+                Request access to VYED for the first time
+              </a>
+            </li>
+             <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#">
+                Request access to a new organisation
+              </a>
+            </li>
+             <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#">
+                After you request access to an organisation or VYED
+              </a>
+            </li>
+             <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#">
+                How to contact your approver
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </aside>
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full-width">
+      
+      <h2 class="govuk-heading-m">
+        Overview
+      </h2>
+      
+      <p>This guidance is for providers using VYED and outlines the key steps in requesting access to the service.</p>
+      <p>If you’re an approver, read the <a href="">approver guide</a>.</p>
+      <p>You’ll need a DfE Sign-in account to access VYED. You can <a href="">create a DfE Sign-in account</a> if you do not have one.</p>
+      <h1 class="govuk-heading-m">Check if you already have access to VYED</h1>
+      <ol class="govuk-list govuk-list--number">
+        <li>Sign in to your DfE Sign-in account</li>
+        <li>Select ‘Services’  from the navigation bar.</li>
+        <li>Look for ‘View your education data (VYED)’ in the list of services.</li>
+      </ol>
+      <p>If VYED is not listed, follow the steps below to request access. </p>
+
+       <h1 class="govuk-heading-m">Request access to VYED for the first time</h1>
+        <ol class="govuk-list govuk-list--number">
+        <li>Sign in to your DfE Sign-in account</li>
+        <li>Select ‘Services’  from the navigation bar.</li>
+        <li>Under ‘Related actions’, select ‘Add services to my account’.</li>
+        <li>Select your organisation if prompted and click ‘Continue’.</li>
+        <li>Select ‘View your education data (VYED)’ and any required sub-services.</li>
+        <li>Review your answers and click ‘Add service’.</li>
+      </ol>
+      {{ govukInsetText({
+        text: "If you’re registered with multiple organisations, repeat these steps for each one."
+      }) }}
+      <p>For more information on services, read the <a href="">services guidance </a>on DfE Sign-in.</p>
+      
+      <h1 class="govuk-heading-m">Request access to a new organisation</h1>
+      <ol class="govuk-list govuk-list--number">
+        <li>Sign in to your DfE Sign-in account</li>
+        <li>Select 'Organisations'  from the navigation bar.</li>
+        <li>Under ‘Related actions’, select ‘Request access to an organisation’.</li>
+        <li>Search for your organisation using the search bar.</li>
+        <li>Select your organisation.</li>
+        <li>Review the organisation details, provide a reason for your request and click ‘Confirm’.</li>
+      </ol>
+      <p>For more information on organisations, read the <a href="">organisations guidance </a>on DfE Sign-in.</p>
+
+      <h1 class="govuk-heading-m">After you request access to an organisation or VYED</h1>
+      <p>We’ll send an email to your organisation’s approver once you request access.</p>
+      <p>You’ll get an email once they approve the request. This means you now have access.</p>
+      <p>You can check the status of your request in the ‘Requests’ section of your DfE Sign-in account. </p>
+
+      <h1 class="govuk-heading-m">How to contact your approver</h1>
+       <ol class="govuk-list govuk-list--number">
+        <li>Sign in to your DfE Sign-in account</li>
+        <li>Select 'Organisations'  from the navigation bar.</li>
+        <li>Select your organisation from the list.</li>
+        <li>Select ‘Show approvers’.</li>
+      </ol>
+      <p>If an approver in your list has left your organisation, you can contact us via the <a href="">Customer Help Portal</a>.</p>
+      <p>If no approvers are listed, the DfE Sign-in team will verify your request. This can take up to 5 working days. </p>
+
+      <nav class="govuk-prototype-kit-common-templates-pagination" role="navigation" aria-label="Pagination">
+
+
+      <p>
+        <a href="#">
+          View a printable version of the whole guide
+        </a>
+      </p>
+
+    </div>
+
+  </main>
+</div>
+
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}
