@@ -1,7 +1,7 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  Mainstream guide example
+  User access guide
 {% endblock %}
 
 {% block header %}
@@ -9,25 +9,6 @@
   {{ govukHeader() }}
 {% endblock %}
 
-{% block beforeContent %}
-
-  {{ govukBreadcrumbs({
-    items: [
-      {
-        text: "Home",
-        href: "#"
-      },
-      {
-        text: "Section",
-        href: "#"
-      },
-      {
-        text: "Subsection"
-      }
-    ]
-  }) }}
-
-{% endblock %}
 
 {% block content %}
 
@@ -35,7 +16,7 @@
     <div class="govuk-grid-column-full">
 
       <h1 class="govuk-heading-xl">
-        View your education data (VYED): access guide
+        View your education data (VYED): user access guide
       </h1>
       </div>
 
@@ -48,15 +29,32 @@
           <ol class="govuk-prototype-kit-common-templates-contents-list__list">
             <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
               <a href="#">
-                Page 1
+                Overview
               </a>
             </li>
             <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
-              Page 2
+              <a href="">
+              Check if you already have access to VYED
             </li>
+            </a>
             <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
               <a href="#">
-                Page 3
+                Request access to VYED for the first time
+              </a>
+            </li>
+             <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#">
+                Request access to a new organisation
+              </a>
+            </li>
+             <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#">
+                After you request access to an organisation or VYED
+              </a>
+            </li>
+             <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#">
+                How to contact your approver
               </a>
             </li>
           </ol>
@@ -126,16 +124,6 @@
 
       <nav class="govuk-prototype-kit-common-templates-pagination" role="navigation" aria-label="Pagination">
 
-      {{ govukPagination({
-        previous: {
-          labelText: "Page 1 title",
-          href: "#"
-        },
-        next: {
-          labelText: "Page 3 title",
-          href: "#"
-        }
-      }) }}
 
       <p>
         <a href="#">
