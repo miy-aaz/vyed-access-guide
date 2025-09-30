@@ -1,8 +1,6 @@
 {% extends "layouts/main.html" %}
 
-{% block pageTitle %}
-  View your education data
-{% endblock %}
+{% set pageName = 'View your education data (VYED)' %}
 
 {% block header %}
   <!-- Blank header with no service name for this page -->
@@ -12,9 +10,7 @@
 
 {% block content %}
 
-
-      <h1 class="govuk-heading-xl">View your education data (VYED)</h1>
-  
+<h1 class="govuk-heading-xl">{{pageName}}</h1>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
