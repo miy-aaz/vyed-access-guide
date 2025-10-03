@@ -8,6 +8,17 @@
   {{ govukHeader() }}
 {% endblock %}
 
+{% block beforeContent %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full-width">
+      {{ govukBackLink({
+        text: "Back",
+        href: "/landing-page"
+      }) }}
+    </div>
+  </div>
+{% endblock %}
+
 
 {% block content %}
 
@@ -44,9 +55,13 @@
         ]
       }) }}
 
+
       {{ govukButton({
-        text: "Continuec"
+        text: "Continue",
+        href: "/sign-in"
       }) }}
+
+    
       </div>
     </div>
   </main>
